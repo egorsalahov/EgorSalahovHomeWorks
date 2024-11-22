@@ -1,5 +1,4 @@
-﻿using Homework._1_задача;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace Homework
 {
