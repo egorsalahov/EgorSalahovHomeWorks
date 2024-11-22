@@ -1,4 +1,5 @@
 ﻿using System.Text.RegularExpressions;
+using HomeworkBinarySearch;
 
 namespace Homework
 {
@@ -6,7 +7,9 @@ namespace Homework
     {
         static void Main(string[] args)
         {
-            
+            /*
+            BinarySearch.DoBinarySearch();
+            */
         }
     }
 }
