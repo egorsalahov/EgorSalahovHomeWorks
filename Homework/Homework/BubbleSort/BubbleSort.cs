@@ -1,77 +1,78 @@
-using System;
+п»їusing System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace BubbleSortHomeWork
+namespace HomeworkBubbleSort
 {
     internal class BubbleSort
     {
         public static void DoBubbleSort()
         {
-            internal class Program
-        {
-            static void Main(string[] args)
+            Console.WriteLine("РќР°РїРёС€РёС‚Рµ СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°");
+
+            int sizeOfArr;
+
+            try
             {
-                Console.WriteLine("Напишите размер массива");
+                string sizeOfArrUser = Console.ReadLine();
+                sizeOfArr = Convert.ToInt32(sizeOfArrUser);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Р’С‹ РІРІРµР»Рё РЅРµРєРѕСЂСЂРµРєС‚РЅРѕРµ С‡РёСЃР»Рѕ");
+                throw;
+            }
 
-                int sizeOfArr;
+            int[] arr = new int[sizeOfArr];
 
+            Console.WriteLine("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёСЏ РІ РјР°СЃСЃРёРІ:");
+
+            //РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РґР»СЏ РІРІРѕРґР° РІ РјР°СЃСЃРёРІ РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
+            int arrElement;
+
+            //РІРІРѕРґ РјР°СЃСЃРёРІР° РѕС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+            for (int i = 0; i < sizeOfArr; i++)
+            {
                 try
                 {
-                    string sizeOfArrUser = Console.ReadLine();
-                    sizeOfArr = Convert.ToInt32(sizeOfArrUser);
+                    string temp = Console.ReadLine();
+                    arrElement = Convert.ToInt32(temp);
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("Вы ввели некорректное число");
+                    Console.WriteLine("Р’С‹ РІРІРµР»Рё РЅРµРєРѕСЂСЂРµРєС‚РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІ");
                     throw;
                 }
 
-                int[] arr = new int[sizeOfArr];
+                arr[i] = arrElement;
+            }
 
-                Console.WriteLine("Введите значения в массив:");
 
-                //вспомогательная переменная для ввода в массив пользователем
-                int arrElement;
 
-                //ввод массива от пользователя
-                for (int i = 0; i < sizeOfArr; i++)
+            for (int i = 0; i < sizeOfArr; i++)
+            {
+                for (int j = 0; j < sizeOfArr - 1; j++)
                 {
-                    try
+                    if (arr[j] > arr[j + 1])
                     {
-                        string temp = Console.ReadLine();
-                        arrElement = Convert.ToInt32(temp);
+                        int temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
                     }
-                    catch (Exception)
-                    {
-                        Console.WriteLine("Вы ввели некорректное значение в массив");
-                        throw;
-                    }
-
-                    arr[i] = arrElement;
-                }
-
-
-
-                for (int i = 0; i < sizeOfArr; i++)
-                {
-                    for (int j = 0; j < sizeOfArr - 1; j++)
-                    {
-                        if (arr[j] > arr[j + 1])
-                        {
-                            int temp = arr[j];
-                            arr[j] = arr[j + 1];
-                            arr[j + 1] = temp;
-                        }
-                    }
-                }
-
-                Console.WriteLine("Ваш массив: ");
-
-                for (int i = 0; i < sizeOfArr; i++)
-                {
-                    Console.Write(arr[i] + " ");
                 }
             }
+
+            Console.WriteLine("Р’Р°С€ РјР°СЃСЃРёРІ: ");
+
+            for (int i = 0; i < sizeOfArr; i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
+
         }
     }
 }
-}
+   
+

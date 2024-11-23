@@ -1,5 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 using HomeworkBinarySearch;
+using HomeworkBubbleSort;
 
 namespace Homework
 {
@@ -8,6 +9,7 @@ namespace Homework
         static void Main(string[] args)
         {
             BinarySearch.DoBinarySearch();
+            BubbleSort.DoBubbleSort();
         }
     }
 }
