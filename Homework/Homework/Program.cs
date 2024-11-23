@@ -7,9 +7,7 @@ namespace Homework
     {
         static void Main(string[] args)
         {
-            
             BinarySearch.DoBinarySearch();
-            
         }
     }
 }
