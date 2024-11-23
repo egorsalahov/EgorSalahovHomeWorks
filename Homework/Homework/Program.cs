@@ -2,6 +2,7 @@
 using HomeworkBinarySearch;
 using HomeworkBubbleSort;
 using HomeworkArrays;
+using HomeworkBrackets;
 
 namespace Homework
 {
@@ -12,6 +13,7 @@ namespace Homework
             BinarySearch.DoBinarySearch();
             BubbleSort.DoBubbleSort();
             MostLongSubArray.DoMostLongSubArray();
+            EnclosureBrackets.DoEnclosureBrackets();
         }
     }
 }
