@@ -3,7 +3,8 @@ using HomeworkBinarySearch;
 using HomeworkBubbleSort;
 using HomeworkArrays;
 using HomeworkBrackets;
-using Homework.Arrays;
+using HomeworkStrings;
+
 
 namespace Homework
 {
@@ -11,11 +12,15 @@ namespace Homework
     {
         static void Main(string[] args)
         {
+            /* 21.11
             BinarySearch.DoBinarySearch();
             BubbleSort.DoBubbleSort();
             MostLongSubArray.DoMostLongSubArray();
             EnclosureBrackets.DoEnclosureBrackets();
             ReverseArray.DoReverseArray();
+            */
+
+            StringIsDigit.DoStringIsDigit();
         }
     }
 }
