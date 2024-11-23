@@ -1,6 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using HomeworkBinarySearch;
 using HomeworkBubbleSort;
+using HomeworkArrays;
 
 namespace Homework
 {
@@ -10,6 +11,7 @@ namespace Homework
         {
             BinarySearch.DoBinarySearch();
             BubbleSort.DoBubbleSort();
+            MostLongSubArray.DoMostLongSubArray();
         }
     }
 }
