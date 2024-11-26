@@ -22,8 +22,10 @@ namespace Homework
 
             /* 28.11
             StringIsDigit.DoStringIsDigit();
-            */
             CapitalizationString.DoCapitalizationString();
+            StringPalindrome.DoStringPalindrome();
+            */
+
         }
     }
 }
