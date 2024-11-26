@@ -24,7 +24,9 @@ namespace Homework
             StringIsDigit.DoStringIsDigit();
             CapitalizationString.DoCapitalizationString();
             StringPalindrome.DoStringPalindrome();
+            StringAnagram.DoStringAnagram();
             */
+
 
         }
     }
