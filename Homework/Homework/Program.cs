@@ -20,7 +20,10 @@ namespace Homework
             ReverseArray.DoReverseArray();
             */
 
+            /* 28.11
             StringIsDigit.DoStringIsDigit();
+            */
+            CapitalizationString.DoCapitalizationString();
         }
     }
 }
