@@ -4,6 +4,7 @@ using HomeworkBubbleSort;
 using HomeworkArrays;
 using HomeworkBrackets;
 using HomeworkStrings;
+using Homework.OOP;
 
 
 namespace Homework
@@ -27,7 +28,16 @@ namespace Homework
             StringAnagram.DoStringAnagram();
             */
 
+            /*2.12
+            OwnDescriptionClass EgorImmutable = new OwnDescriptionClass();
+            Console.WriteLine($"Name: {EgorImmutable.Name}," +
+                $" Surname: {EgorImmutable.Surname}," +
+                $" Age: {EgorImmutable.Age}");
 
+            OwnDescriptionStruct EgorChangeable = new OwnDescriptionStruct(2500, System.Drawing.Color.Brown);
+            Console.WriteLine($"DotaMMR: {EgorChangeable.DotaMMR}, " +
+                $"HairColor: {EgorChangeable.HairColor}");
+            */
         }
     }
 }
