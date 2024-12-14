@@ -6,6 +6,7 @@ using HomeworkBrackets;
 using HomeworkStrings;
 using Homework.OOP;
 using Homework.OOP.GeometryShapes;
+using Homework.OOP.Hierarchy;
 
 
 namespace Homework
@@ -52,6 +53,14 @@ namespace Homework
             Triangle triangle = new Triangle(2, 5, 10, 5);
             triangle.CalculateArea();
             triangle.CalculatePerimeter();
+
+
+
+            var b = new B();
+            var c = new C();
+            ((A)c).PrintMessage(); //A
+            ((A)b).PrintMessage(); //B
+            c.PrintMessage();
             */
 
 
