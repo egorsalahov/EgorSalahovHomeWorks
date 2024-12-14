@@ -5,6 +5,7 @@ using HomeworkArrays;
 using HomeworkBrackets;
 using HomeworkStrings;
 using Homework.OOP;
+using Homework.OOP.GeometryShapes;
 
 
 namespace Homework
@@ -38,6 +39,22 @@ namespace Homework
             Console.WriteLine($"DotaMMR: {EgorChangeable.DotaMMR}, " +
                 $"HairColor: {EgorChangeable.HairColor}");
             */
+
+            /* 16.12 
+            Rectangle rectangle = new Rectangle(10, 5);
+            rectangle.CalculateArea();
+            rectangle.CalculatePerimeter();
+
+            Circle circle = new Circle(5);
+            circle.CalculateArea();
+            circle.CalculatePerimeter();
+
+            Triangle triangle = new Triangle(2, 5, 10, 5);
+            triangle.CalculateArea();
+            triangle.CalculatePerimeter();
+            */
+
+
         }
     }
 }

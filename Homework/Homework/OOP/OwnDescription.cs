@@ -31,5 +31,7 @@ namespace Homework.OOP
             DotaMMR = mmr;
             HairColor = color;
         }
+
     }
+
 }
