@@ -7,6 +7,7 @@ using HomeworkStrings;
 using Homework.OOP;
 using Homework.OOP.GeometryShapes;
 using Homework.OOP.Hierarchy;
+using HomeworkThreads;
 
 
 namespace Homework
@@ -64,6 +65,41 @@ namespace Homework
             */
 
 
+            //2 семестр
+
+
+            /*29.04
+            
+            //задача
+            ArrayThread arrayThread = new ArrayThread();
+            int n = 100000;
+            int m = 5;
+            arrayThread.RandomArray(n);
+            arrayThread.Calculate(m);
+            arrayThread.PrintSum();
+
+            //корректный
+            Thread process0 = new Thread(() => CorrectPeretson.Process(0));
+            Thread process1 = new Thread(() => CorrectPeretson.Process(1));
+
+            process0.Start();
+            process1.Start();
+
+            process0.Join();
+            process1.Join();
+
+
+            //некорректный (без volatile)
+            Thread process3 = new Thread(() => UncorrectPeterson.Process(0));
+            Thread process4 = new Thread(() => UncorrectPeterson.Process(1));
+
+            process3.Start();
+            process4.Start();
+
+            process3.Join();
+            process4.Join();
+        }
+            */
         }
     }
 }
