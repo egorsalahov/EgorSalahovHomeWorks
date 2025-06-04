@@ -33,7 +33,7 @@ namespace Homework.AsyncAwait
             {
                 await Task.Delay(300);
 
-                var report = new InformationProgress(i * 10);
+                var report = new InformationProgress(i);
 
                 progress.Report(report);
             }
