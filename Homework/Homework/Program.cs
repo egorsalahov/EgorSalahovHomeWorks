@@ -68,7 +68,7 @@ namespace Homework
             //2 семестр
 
 
-            /*29.04
+            /*28.04
             
             //задача
             ArrayThread arrayThread = new ArrayThread();
@@ -98,7 +98,7 @@ namespace Homework
 
             process3.Join();
             process4.Join();
-        }
+        
             */
         }
     }
